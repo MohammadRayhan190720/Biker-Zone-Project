@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,10 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            button_color: '#E76F51',
+            banner_color: '#rgb(253, 241, 238)',
+            footer_color: '#0B0D17',
+
           },
           fontFamily:{
             'poppins' : ["poppins", "sans-serif"]
@@ -33,8 +36,41 @@
     }
   </script>
 </head>
-<body>
-  <h1 class="text-5xl font-poppins">Welcome banglesh 2.0</h1>
-  
+<body class="font-poppins">
+<header class="w-11/12 mx-auto m-6 lg:mx-20 lg:my-12">
+  <nav>
+   <div class="navbar bg-base-100">
+  <div class="flex-1">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+       <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-2xl lg:text-3xl">Bike Dekho</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="">
+    <a class="btn bg-button_color text-white px-8 py-4">Login</a>
+  </div>
+</div>
+
+
+  </nav>
+</header>  
 </body>
 </html>
